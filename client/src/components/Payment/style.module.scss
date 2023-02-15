@@ -1,0 +1,39 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.payment {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  animation: slideUp 250ms;
+  border-radius: 24px 24px 0 0;
+  background: white;
+
+  .header {
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.input {
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 48px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  margin-top: 16px;
+}
