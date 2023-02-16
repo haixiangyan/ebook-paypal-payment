@@ -29,42 +29,44 @@ function App() {
 
   return (
     <div className={styles.app}>
-      {/*头部*/}
-      <div className={styles.book}>
-        <header className={styles.header}>
-          <LeftOutlined />
-        </header>
+      <div className={styles.wrapper}>
+        {/*头部*/}
+        <div className={styles.book}>
+          <header className={styles.header}>
+            <LeftOutlined />
+          </header>
 
-        <img className={styles.bookImage} src={bookImage} alt="Book"/>
+          <img className={styles.bookImage} src={bookImage} alt="Book"/>
 
-        <p className={styles.bookTitle}>JavaScript 高级程序设计</p>
+          <p className={styles.bookTitle}>JavaScript 高级程序设计</p>
 
-        <p className={styles.author}>作者 - [美] 马特·弗里斯比</p>
-      </div>
-
-      {/*描述*/}
-      <div className={styles.desc}>
-        <div className={styles.descHeader}>
-          <span className={styles.descTitle}>小书简介</span>
-          <span className={styles.price}>$1.00</span>
+          <p className={styles.author}>作者 - [美] 马特·弗里斯比</p>
         </div>
 
-        <p className={styles.descText}>
-          书是JavaScript经典图书的新版。第4版全面、深入地介绍了JavaScript开发者必须掌握的前端开发技术，涉及JavaScript的基础特性和高级特性。书中详尽讨论了JavaScript的各个方面，从JavaScript的起源开始，逐步讲解到新出现的技术，其中重点介绍ECMAScript和DOM标准。
-        </p>
-      </div>
+        {/*描述*/}
+        <div className={styles.desc}>
+          <div className={styles.descHeader}>
+            <span className={styles.descTitle}>小书简介</span>
+            <span className={styles.price}>$1.00</span>
+          </div>
 
-      {/* Tag */}
-      <div className={styles.tagList}>
-        <span className={styles.yellow}>JavaScript</span>
-        <span className={styles.red}>前端开发</span>
-        <span className={styles.blue}>入门进阶</span>
-      </div>
+          <p className={styles.descText}>
+            书是JavaScript经典图书的新版。第4版全面、深入地介绍了JavaScript开发者必须掌握的前端开发技术，涉及JavaScript的基础特性和高级特性。书中详尽讨论了JavaScript的各个方面，从JavaScript的起源开始，逐步讲解到新出现的技术，其中重点介绍ECMAScript和DOM标准。
+          </p>
+        </div>
 
-      {/*购买按钮*/}
-      <button className={styles.purchaseButton} onClick={() => setPaying(true)}>
-        {clientToken ? '购买小书' :  <LoadingOutlined />}
-      </button>
+        {/* Tag */}
+        <div className={styles.tagList}>
+          <span className={styles.yellow}>JavaScript</span>
+          <span className={styles.red}>前端开发</span>
+          <span className={styles.blue}>入门进阶</span>
+        </div>
+
+        {/*购买按钮*/}
+        <button className={styles.purchaseButton} onClick={() => setPaying(true)}>
+          {clientToken ? '购买小书' :  <LoadingOutlined />}
+        </button>
+      </div>
 
       {isReady && paying && <div className={styles.mask} onClick={() => setPaying(false)}></div>}
 

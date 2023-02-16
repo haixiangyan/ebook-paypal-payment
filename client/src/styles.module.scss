@@ -11,10 +11,15 @@
 .app {
   position: relative;
   max-width: 414px;
-  padding: 12px;
-  background: white;
-  border-radius: 24px;
   overflow: hidden;
+
+  .wrapper {
+    background: white;
+    padding: 12px;
+    max-height: calc(100vh - 24px);
+    overflow: auto;
+    border-radius: 24px;
+  }
 
   .header {
     display: flex;
@@ -134,5 +139,6 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     animation: fadeIn 250ms;
+    border-radius: 24px;
   }
 }

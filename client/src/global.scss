@@ -5,16 +5,15 @@
 }
 
 body {
-  background: #dac5a7;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 
   #root {
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #dac5a7;
   }
 }
