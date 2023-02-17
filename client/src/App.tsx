@@ -33,7 +33,7 @@ function App() {
         {/*头部*/}
         <div className={styles.book}>
           <header className={styles.header}>
-            <LeftOutlined />
+            <LeftOutlined className={styles.icon} />
           </header>
 
           <img className={styles.bookImage} src={bookImage} alt="Book"/>
@@ -51,7 +51,7 @@ function App() {
           </div>
 
           <p className={styles.descText}>
-            书是JavaScript经典图书的新版。第4版全面、深入地介绍了JavaScript开发者必须掌握的前端开发技术，涉及JavaScript的基础特性和高级特性。书中详尽讨论了JavaScript的各个方面，从JavaScript的起源开始，逐步讲解到新出现的技术，其中重点介绍ECMAScript和DOM标准。
+            本书是JavaScript经典图书的新版。第4版全面、深入地介绍了JavaScript开发者必须掌握的前端开发技术，涉及JavaScript的基础特性和高级特性。书中详尽讨论了JavaScript的各个方面，从JavaScript的起源开始，逐步讲解到新出现的技术，其中重点介绍ECMAScript和DOM标准。
           </p>
         </div>
 

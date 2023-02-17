@@ -56,7 +56,9 @@ const Payment: FC<Props> = (props) => {
   return (
     <div className={styles.payment}>
       <div className={styles.header}>
-        <CloseOutlined style={{ cursor: 'pointer' }} onClick={onCancel} />
+        <span>购买小书</span>
+
+        <CloseOutlined className={styles.icon} onClick={onCancel} />
       </div>
 
       <PayPalScriptProvider

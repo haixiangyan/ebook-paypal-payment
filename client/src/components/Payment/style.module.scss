@@ -19,9 +19,18 @@
   background: white;
 
   .header {
+    position: relative;
     margin-bottom: 16px;
     width: 100%;
-    text-align: right;
+    text-align: center;
+
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
   }
 }
 
